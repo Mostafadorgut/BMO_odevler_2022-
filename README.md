@@ -2,7 +2,15 @@ sinav_sonuc = {'isimler': ['ayse K.', 'Ahmet M.', 'Nuri C.', 'Nawar T.', 'Suzan 
                'cinsiyet': ['K', 'E', 'E', 'E', 'K', 'K'], 'vize': [60, 40, 97, 45, 56, 95],
                'final': [70, 30, 23, 80, 78, 46]}#tabloyu sinav_sonuc isimli bir sözlük oluşturduk
 
-
+yeni_vize=[]# yeni dizi olusturduk vize notlar icin
+yeni_final=[]# yeni dizi olusturduk final notlar icin
+yeni_isim=[]# yeni dizi olusturduk isim  icin
+for i in sinav_sonuc['vize']: #for dongusu vize notlari icin
+    yeni_vize.append(i)
+for j in sinav_sonuc['final']:#for dongusu final notlari icin
+    yeni_final.append(j)
+for k in sinav_sonuc['isimler']:#for dongusu isimler icin
+    yeni_isim.append(k)
 for l in range(6):
     notortalamasi =yeni_vize[l]*0.3+yeni_final[l]*0.7# her öğrenci için geçme notunu, %30 vize ve %70 final
     if(notortalamasi>=60):#not ortalamasi 59 dan daha fazla 
