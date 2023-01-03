@@ -46,7 +46,10 @@ def yeni_kayit(): #yeni fonk olusturduk
         print(sinav_sonuc["cinsiyet"], '\n')
         print(sinav_sonuc["vize"], '\n')
         print(sinav_sonuc["final"])
-
+   print(sinav_sonuc["isimler"], '\n')
+        print(sinav_sonuc["cinsiyet"], '\n')
+        print(sinav_sonuc["vize"], '\n')
+        print(sinav_sonuc["final"])
 
 yeni_kayit()#yeni fonk cağır
 
