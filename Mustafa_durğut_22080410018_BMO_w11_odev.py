@@ -7,12 +7,7 @@ print(sinav_sonuc['turkce'])
 # bu iki bos liste kadin ve erkek turkce notlari ayri ayri ayirlasin
 kadinlarin_turkce_notlari = []
 erkeklerin_turkce_notlari = []
-count_k = 0
-count_e = 0
-k_mat = 0
-k_turk = 0
-e_mat = 0
-e_turk = 0
+
 for i in range(len(sinav_sonuc['cinsiyet'])):
     # egir kadin sayaci + 1
     if sinav_sonuc['cinsiyet'][i] == 'K':
