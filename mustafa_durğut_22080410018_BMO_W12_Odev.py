@@ -10,6 +10,12 @@ for j in sinav_sonuc['final']:#for dongusu final notlari icin
     yeni_final.append(j)
 for k in sinav_sonuc['isimler']:#for dongusu isimler icin
     yeni_isim.append(k)
+    for i in sinav_sonuc['vize']:  # for dongusu vize notlari icin
+        yeni_vize.append(i)
+    for j in sinav_sonuc['final']:  # for dongusu final notlari icin
+        yeni_final.append(j)
+    for k in sinav_sonuc['isimler']:  # for dongusu isimler icin
+        yeni_isim.append(k)
 
 for l in range(6):
     notortalamasi =yeni_vize[l]*0.3+yeni_final[l]*0.7# her öğrenci için geçme notunu, %30 vize ve %70 final
@@ -46,10 +52,7 @@ def yeni_kayit(): #yeni fonk olusturduk
         print(sinav_sonuc["cinsiyet"], '\n')
         print(sinav_sonuc["vize"], '\n')
         print(sinav_sonuc["final"])
-   print(sinav_sonuc["isimler"], '\n')
-        print(sinav_sonuc["cinsiyet"], '\n')
-        print(sinav_sonuc["vize"], '\n')
-        print(sinav_sonuc["final"])
+
 
 yeni_kayit()#yeni fonk cağır
 
